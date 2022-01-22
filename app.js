@@ -31,10 +31,10 @@ const fetchCat = () => {
 
       elementInfo.innerHTML = "";
 
-      elementInfo.innerHTML = `<p>Name: ${nameCat}</p>
-          <p>Description:${catDesc}</p>
-          <p>Life span: ${lifeSpan} years</p>
-          <p>Affection Level: ${affectionLvl}</p>`;
+      elementInfo.innerHTML = `<p><span>Name:</span> ${nameCat}</p>
+          <p><span>Description:</span> ${catDesc}</p>
+          <p><span>Life span:</span> ${lifeSpan} years</p>
+          <p><span>Affection Level:</span> ${affectionLvl}</p>`;
     })
     .catch((err) => console.error(err));
 };

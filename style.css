@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddfdf0;
+}
+.section--center {
+  padding: 1rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.section--center h2 {
+  color: #3af3a9;
+  padding: 2rem 0;
+  font-size: calc(2rem + 0.5vw);
+  font-family: "Chicle", cursive;
+}
+
+.section--center_btn {
+  padding: 0.5rem 1rem;
+  background-color: #3af3a9;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: calc(1rem + 0.5vw);
+  font-family: "Chicle", cursive;
+  cursor: pointer;
+  color: #ecf7f2;
+  margin-bottom: 2rem;
+}
+
+.section--center_btn:active,
+.section--center_btn:hover {
+  color: #3af3a9;
+  background-color: #1a4934;
+}
+
+.section--center__catsection {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  overflow: hidden;
+}
+
+.section--center__catsection-catinfo {
+  padding: 2rem 3rem;
+}
+
+.section--center__catsection-catinfo p {
+  padding: 0 1rem;
+  color: #0de790;
+  font-size: calc(1rem + 0.5vw);
+  font-family: "Bodoni Moda", serif;
+  font-weight: 900;
+}
+
+.section--center__catsection-catinfo span {
+  color: #0cca7e;
+}
+
+.section--center__catsection-imgHolder {
+  padding: 1rem 4rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 2px solid #0cca7e;
+}
